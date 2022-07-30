@@ -27,15 +27,26 @@
     position: absolute;
     bottom: 0;
 }
-.jump{
-    animation: jump 500ms  ease-out;
-    -webkit-animation: jump 500ms  ease-out;
+
+.jump {
+    animation: jump 500ms ease-out;
+    -webkit-animation: jump 500ms ease-out;
 }
+
 .clouds {
     position: absolute;
     width: 550px;
-    animation:clouds-animation 20s infinite linear ;
-    
+    animation: clouds-animation 20s infinite linear;
+
+}
+
+.board {
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 @keyframes pipe-animation {
@@ -72,12 +83,13 @@
 
 @keyframes clouds-animation {
 
-from {
-    right: 0;
-}
-to{
-    right: 100%;
-}
+    from {
+        right: 0;
+    }
+
+    to {
+        right: 100%;
+    }
 
 
 }
